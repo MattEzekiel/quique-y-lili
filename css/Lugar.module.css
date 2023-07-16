@@ -1,0 +1,18 @@
+.lugar {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 769px) {
+    .lugar {
+        background-image: url("../public/assets/place-background.jpg");
+        background-position: bottom center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lugar {
+        background-image: url("../public/assets/place-mobile-background.jpg");
+        background-position: left center;
+    }
+}

@@ -42,7 +42,7 @@ function CountDown() {
                         <ul className={"flex justify-center items-center gap-x-5 xl:gap-x-10"}>
                             <li className={"flex flex-col justify-center items-center text-2xl"}>{days} <span className={"text-base xl:text-lg capitalize"}>{ days === 1 ? 'dia' : 'dias'}</span></li>
                             <li className={"flex flex-col justify-center items-center text-2xl"}>{hours} <span className={"text-base xl:text-lg capitalize"}>{ hours === 1 ? 'hora' : 'horas' }</span></li>
-                            <li className={"flex flex-col justify-center items-center text-2xl"}>{minutes} <span className={"text-base xl:text-lg capitalize"}>{ minutes === 1 ? 'minuto' : 'minutes' }</span></li>
+                            <li className={"flex flex-col justify-center items-center text-2xl"}>{minutes} <span className={"text-base xl:text-lg capitalize"}>{ minutes === 1 ? 'minuto' : 'minutos' }</span></li>
                             <li className={"flex flex-col justify-center items-center  text-2xl"}>{seconds} <span className={"text-base xl:text-lg capitalize"}>{ seconds === 1 ? 'segundo' : 'segundos' }</span></li>
                     	</ul>
                     )

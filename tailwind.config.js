@@ -18,6 +18,9 @@ module.exports = {
         'celeste': "#C5D5FF",
         'verde': "#B5EFD7",
       },
+      rotate: {
+        '270' : '270deg',
+      }
     },
   },
   plugins: [],

@@ -4,26 +4,73 @@ import H2 from "@/components/H2";
 import { dancingScript } from "@/helpers/fonts";
 import ButtonHoverEffect from "@/components/ButtonHoverEffect";
 import SectionLugar from 'css/Lugar.module.css';
+import sectionRegalos from 'css/Regalos.module.css';
+import ButtonCBU from "@/components/ButtonCBU";
 
 export default function Home() {
   return (
       <main>
-          <div className={"min-h-screen flex justify-center items-center bg-rosita"}>
-              <div className={"pb-10 pt-20 lg:py-10"}>
-                  <h1 className={`${dancingScript.className} text-center uppercase flex flex-col`}>
-                      <span className={"text-4xl xl:text-5xl"}>¡Nos Casamos!</span>
-                      <span className={"text-6xl xl:text-9xl capitalize block mb-2 mt-5"}>Quique</span>
-                      <span className={"text-3xl xl:text-6xl block my-3"}>&</span>
-                      <span className={"text-6xl xl:text-9xl capitalize block"}>Lili</span>
-                  </h1>
-                  <p className={`${dancingScript.className} text-center text-4xl mt-6`}><sub>...</sub> Que tiempo y ocasión acontecen a todos.</p>
-                  <section className={"py-10 lg:py-20 lg:bg-transparent"}>
-                      <H2>Nos veremos en</H2>
-                      <div className={"mt-10"}>
-                          <CountDown />
-                      </div>
-                  </section>
+          <div className={"relative"}>
+              <Image
+                  src={"/assets/deco/rosa-costados.png"}
+                  width={300}
+                  height={300}
+                  alt={"Rosa"}
+                  className={"absolute top-0 z-10 transform-gpu rotate-180 lg:inline hidden"}
+              />
+              <Image
+                  src={"/assets/deco/rosa-y.png"}
+                  width={300}
+                  height={300}
+                  alt={"Rosa"}
+                  className={"absolute right-0 left-0 mx-auto z-20 transform-gpu lg:inline hidden rotate-180"}
+                  style={{ top: "-68px" }}
+              />
+              <Image
+                  src={"/assets/deco/rosa-costados.png"}
+                  width={300}
+                  height={300}
+                  alt={"Rosa"}
+                  className={"absolute top-0 right-0 z-10 transform-gpu rotate-270 lg:inline hidden"}
+              />
+              <div className={"min-h-screen flex justify-center items-center bg-rosita"}>
+                  <div className={"pb-10 pt-20 lg:py-10"}>
+                      <h1 className={`${dancingScript.className} text-center uppercase flex flex-col`}>
+                          <span className={"text-4xl xl:text-5xl"}>¡Nos Casamos!</span>
+                          <span className={"text-6xl xl:text-9xl capitalize block mb-2 mt-5"}>Quique</span>
+                          <span className={"text-3xl xl:text-6xl block my-3"}>&</span>
+                          <span className={"text-6xl xl:text-9xl capitalize block"}>Lili</span>
+                      </h1>
+                      <p className={`${dancingScript.className} text-center text-4xl mt-6`}><sub>...</sub> Que tiempo y ocasión acontecen a todos.</p>
+                      <section className={"py-10 lg:py-20 lg:bg-transparent"}>
+                          <H2>Nos veremos en</H2>
+                          <div className={"mt-10"}>
+                              <CountDown />
+                          </div>
+                      </section>
+                  </div>
               </div>
+              <Image
+                  src={"/assets/deco/rosa-costados.png"}
+                  width={300}
+                  height={300}
+                  alt={"Rosa"}
+                  className={"absolute bottom-5 z-10 transform-gpu rotate-90 lg:inline hidden"}
+              />
+              <Image
+                  src={"/assets/deco/rosa-y.png"}
+                  width={300}
+                  height={300}
+                  alt={"Rosa"}
+                  className={"absolute bottom-0 right-0 left-0 mx-auto z-10 transform-gpu lg:inline hidden"}
+              />
+              <Image
+                  src={"/assets/deco/rosa-costados.png"}
+                  width={300}
+                  height={300}
+                  alt={"Rosa"}
+                  className={"absolute bottom-5 right-0 z-10 transform-gpu lg:inline hidden"}
+              />
           </div>
           <section id={"lugar"} className={SectionLugar.lugar}>
               <div className={"container mx-auto px-5 py-10 lg:py-20 flex flex-col xl:flex-row"}>
@@ -95,10 +142,16 @@ export default function Home() {
                   </li>
               </ul>
           </section>
-          <section id={"regalos"} className={"py-10 container mx-auto px-5"}>
-              <H2>Regalos</H2>
-              <p className={"text-center"}>Si quisieras hacernos un presente podés contribuir a través del CBU</p>
-              <button type={"button"}>Regalos</button>
+          <section id={"regalos"} className={`${sectionRegalos.regalos} py-10 lg:py-20`}>
+            <div className={"container mx-auto px-5"}>
+                <div className={"w-fit mx-auto shadow-xl rounded bg-white p-10"}>
+                    <H2>Regalos</H2>
+                    <p className={"text-center mt-3"}>Si quisieras hacernos un presente podés contribuir a través del CBU</p>
+                    <ButtonCBU
+                        cbu={process.env.CBU_NUMBER}
+                    />
+                </div>
+            </div>
           </section>
       </main>
   )

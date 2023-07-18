@@ -1,10 +1,32 @@
 'use client';
 
-import { useState } from "react";
+import {useEffect, useState} from "react";
 import StylesHamburguer from 'css/HamburguerMenu.module.css';
 
 function Menu() {
     const [isOpen, setIsOpen] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const header = document.querySelector('header');
+            const lugarSection = document.querySelector('#lugar');
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (lugarSection && scrollTop >= lugarSection.offsetTop) {
+                header.classList.add('shadow','bg-rosita');
+                header.classList.remove('bg-transparent');
+            } else {
+                header.classList.remove('shadow','bg-rosita');
+                header.classList.add('bg-transparent');
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
         <div className={"max-w-full overflow-x-hidden"}>
@@ -18,7 +40,7 @@ function Menu() {
                 </span>
             </button>
             <nav className={`${StylesHamburguer.backdrop} ${isOpen ? StylesHamburguer.backdropShow : StylesHamburguer.backdropHidden} lg:relative lg:right-0 absolute top-16 lg:top-0 transition-all duration-300 ${isOpen ? 'right-0' : 'right-[-100vw]'}`}>
-                <ul className={"flex flex-col lg:flex-row gap-x-5 h-screen lg:h-fit bg-rosita px-5 gap-y-5 w-fit"}>
+                <ul className={"flex flex-col lg:flex-row gap-x-5 h-screen lg:h-fit bg-rosita lg:bg-inherit px-5 gap-y-5 w-fit"}>
                     <li>
                         <a href="#lugar" className={"uppercase"}>Lugar</a>
                     </li>

@@ -33,8 +33,8 @@ export default function Home() {
                   alt={"Rosa"}
                   className={"absolute top-0 right-0 z-10 transform-gpu rotate-270 lg:inline hidden"}
               />
-              <div className={"min-h-screen flex justify-center items-center bg-rosita"}>
-                  <div className={"pb-10 pt-20 lg:py-10"}>
+              <div className={"min-h-screen flex justify-center items-center bg-rosita py-10"}>
+                  <div className={"py-10 lg:py-20"}>
                       <h1 className={`${dancingScript.className} text-center uppercase flex flex-col`}>
                           <span className={"text-4xl xl:text-5xl"}>¡Nos Casamos!</span>
                           <span className={"text-6xl xl:text-9xl capitalize block mb-2 mt-5"}>Quique</span>
@@ -42,9 +42,9 @@ export default function Home() {
                           <span className={"text-6xl xl:text-9xl capitalize block"}>Lili</span>
                       </h1>
                       <p className={`${dancingScript.className} text-center text-4xl mt-6`}><sub>...</sub> Que tiempo y ocasión acontecen a todos.</p>
-                      <section className={"py-10 lg:py-20 lg:bg-transparent"}>
+                      <section className={"py-10 lg:bg-transparent"}>
                           <H2>Nos veremos en</H2>
-                          <div className={"mt-10"}>
+                          <div className={"mt-5"}>
                               <CountDown />
                           </div>
                       </section>
@@ -74,7 +74,7 @@ export default function Home() {
           </div>
           <section id={"lugar"} className={SectionLugar.lugar}>
               <div className={"container mx-auto px-5 py-10 lg:py-20 flex flex-col xl:flex-row"}>
-                  <div className={"xl:w-1/2 xl:pr-32 flex flex-col justify-between"}>
+                  <div className={"xl:w-1/2 xl:pr-28 flex flex-col justify-between"}>
                       <div>
                           <H2 classes={"xl:text-left"}>Lugar</H2>
                           <p className={"mt-3"}>Los invitamos a nuestra boda en <strong>Campo Cristal Eventos</strong>. Estamos emocionados de compartir este día tan especial en nuestras vidas. <strong>La fecha es el sábado 2 de marzo de 2024</strong>, y nos encantaría que se unieran a nosotros en <b>Victor Juan Garino 6017, B1759 González Catán, Provincia de Buenos Aires</b>. Para aquellos que se preguntan acerca de la distancia desde la ciudad de Buenos Aires, el lugar se encuentra a unos 30 kilómetros de la capital, tomando la ruta 3.</p>
@@ -82,7 +82,7 @@ export default function Home() {
                       </div>
                       <p className={"mt-3 text-xl mb-10 lg:mb-0"}>¡Los esperamos con un corazón lleno de gratitud!</p>
                   </div>
-                  <div className={"xl:w-1/2 shadow-lg rounded"}>
+                  <div className={"xl:w-1/2 rounded"}>
                       <ul className={"grid grid-cols-2"}>
                           <li>
                               <Image

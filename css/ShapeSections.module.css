@@ -1,0 +1,28 @@
+.customShapeDividerTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.customShapeDividerTop.bottom {
+    bottom: 0;
+    top: auto;
+}
+
+.customShapeDividerTop svg {
+    position: relative;
+    display: block;
+    width: calc(127% + 1px);
+    height: 89px;
+}
+
+.customShapeDividerTop.bottom svg {
+    transform: rotateX(180deg);
+}
+
+.customShapeDividerTop.inverted svg {
+    transform: rotateY(180deg);
+}

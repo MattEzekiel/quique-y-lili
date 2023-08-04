@@ -13,11 +13,19 @@ function Menu() {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
             if (lugarSection && scrollTop >= lugarSection.offsetTop) {
-                header.classList.add('shadow','bg-rosita');
+                header.classList.add('shadow','bg-principal');
                 header.classList.remove('bg-transparent');
+                const tags_a = header.querySelectorAll('a');
+                tags_a.forEach(tag_a => {
+                    tag_a.classList.add('text-white');
+                })
             } else {
-                header.classList.remove('shadow','bg-rosita');
+                header.classList.remove('shadow','bg-principal');
                 header.classList.add('bg-transparent');
+                const tags_a = header.querySelectorAll('a');
+                tags_a.forEach(tag_a => {
+                    tag_a.classList.remove('text-white');
+                })
             }
         };
 
@@ -40,7 +48,7 @@ function Menu() {
                 </span>
             </button>
             <nav className={`${StylesHamburguer.backdrop} ${isOpen ? StylesHamburguer.backdropShow : StylesHamburguer.backdropHidden} lg:relative lg:right-0 absolute top-16 lg:top-0 transition-all duration-300 ${isOpen ? 'right-0' : 'right-[-100vw]'}`}>
-                <ul className={"flex flex-col lg:flex-row gap-x-5 h-screen lg:h-fit bg-rosita lg:bg-inherit px-5 gap-y-5 w-fit"}>
+                <ul className={"flex flex-col lg:flex-row gap-x-5 h-screen lg:h-fit bg-principal lg:bg-inherit px-5 gap-y-5 w-fit"}>
                     <li>
                         <a href="#lugar" className={"uppercase"}>Lugar</a>
                     </li>

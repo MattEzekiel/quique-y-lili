@@ -21,8 +21,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es" className={"scroll-smooth"}>
-        <body className={`${rubik.className} bg-rosita`}>
-        	<header className={"py-5 fixed lg:sticky top-0 w-full bg-transparent z-20 transition-all duration-200"}>
+        <body className={`${rubik.className}`}>
+        	<header className={"py-5 fixed lg:fixed top-0 w-full bg-transparent z-20 transition-all duration-200"}>
                 <div className={"container mx-auto flex justify-between items-center overflow-x-hidden px-5"}>
                     <a href="#" className={`${dancingScript.className} text-lg capitalize block w-fit`}>Quique & Lili</a>
                     <Menu />

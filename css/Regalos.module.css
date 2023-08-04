@@ -1,11 +1,6 @@
 .regalos {
+    background-image: url("../public/assets/regalos.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-
-@media screen and (min-width: 769px){
-    .regalos {
-        background-image: url("../public/assets/place-gifts.jpg");
-    }
 }

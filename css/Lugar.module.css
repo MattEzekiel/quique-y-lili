@@ -2,9 +2,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    background-image: url("../public/assets/lugar.jpg");
+    background-position: top right;
 }
 
-@media screen and (min-width: 769px) {
+/*@media screen and (min-width: 769px) {
     .lugar {
         padding: 20px 0;
         background-image: url("../public/assets/place-background.jpg");
@@ -17,4 +19,4 @@
         background-image: url("../public/assets/place-mobile-background.jpg");
         background-position: left center;
     }
-}
+}*/

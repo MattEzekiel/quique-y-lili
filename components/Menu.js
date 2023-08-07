@@ -13,18 +13,18 @@ function Menu() {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
             if (lugarSection && scrollTop >= lugarSection.offsetTop) {
-                header.classList.add('shadow','bg-principal');
-                header.classList.remove('bg-transparent');
+                header.classList.add('lg:shadow','lg:bg-principal');
+                header.classList.remove('lg:bg-transparent');
                 const tags_a = header.querySelectorAll('a');
                 tags_a.forEach(tag_a => {
-                    tag_a.classList.add('text-white');
+                    tag_a.classList.remove('lg:text-black');
                 })
             } else {
-                header.classList.remove('shadow','bg-principal');
-                header.classList.add('bg-transparent');
+                header.classList.remove('lg:shadow','lg:bg-principal');
+                header.classList.add('lg:bg-transparent');
                 const tags_a = header.querySelectorAll('a');
                 tags_a.forEach(tag_a => {
-                    tag_a.classList.remove('text-white');
+                    tag_a.classList.add('lg:text-black');
                 })
             }
         };
@@ -50,16 +50,16 @@ function Menu() {
             <nav className={`${StylesHamburguer.backdrop} ${isOpen ? StylesHamburguer.backdropShow : StylesHamburguer.backdropHidden} lg:relative lg:right-0 absolute top-16 lg:top-0 transition-all duration-300 ${isOpen ? 'right-0' : 'right-[-100vw]'}`}>
                 <ul className={"flex flex-col lg:flex-row gap-x-5 h-screen lg:h-fit bg-principal lg:bg-inherit px-5 gap-y-5 w-fit"}>
                     <li>
-                        <a href="#lugar" className={"uppercase"}>Lugar</a>
+                        <a href="#lugar" className={"uppercase text-white"}>Lugar</a>
                     </li>
                     <li>
-                        <a href="#confirmar" className={"uppercase"}>Confirmar asistencia</a>
+                        <a href="#confirmar" className={"uppercase text-white"}>Confirmar asistencia</a>
                     </li>
                     <li>
-                        <a href="#regalos" className={"uppercase"}>Regalos</a>
+                        <a href="#regalos" className={"uppercase text-white"}>Regalos</a>
                     </li>
                     <li>
-                        <a href="#mapa" className={"uppercase"}>Mapa</a>
+                        <a href="#mapa" className={"uppercase text-white"}>¿Cómo llegar?</a>
                     </li>
                 </ul>
             </nav>

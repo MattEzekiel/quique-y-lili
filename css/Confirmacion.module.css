@@ -1,6 +1,23 @@
 .confirmar {
-    background-image: url("../public/assets/confirmacion.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media screen and (min-width: 769px) {
+    .confirmar {
+        background-image: url("../public/assets/confirmacion.jpg");
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 400px){
+    .confirmar {
+        background-image: url("../public/assets/tablet/confirmacion.jpg");
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .confirmar {
+        background-image: url("../public/assets/mobile/confirmacion.jpg");
+    }
 }

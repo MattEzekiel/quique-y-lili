@@ -50,16 +50,16 @@ function Menu() {
             <nav className={`${StylesHamburguer.backdrop} ${isOpen ? StylesHamburguer.backdropShow : StylesHamburguer.backdropHidden} lg:relative lg:right-0 absolute top-16 lg:top-0 transition-all duration-300 ${isOpen ? 'right-0' : 'right-[-100vw]'}`}>
                 <ul className={"flex flex-col lg:flex-row gap-x-5 h-screen lg:h-fit bg-principal lg:bg-inherit px-5 gap-y-5 w-fit"}>
                     <li>
-                        <a href="#lugar" className={"uppercase text-white"}>Lugar</a>
+                        <a href="#lugar" className={"uppercase text-white lg:text-black"}>Lugar</a>
                     </li>
                     <li>
-                        <a href="#confirmar" className={"uppercase text-white"}>Confirmar asistencia</a>
+                        <a href="#confirmar" className={"uppercase text-white lg:text-black"}>Confirmar asistencia</a>
                     </li>
                     <li>
-                        <a href="#regalos" className={"uppercase text-white"}>Regalos</a>
+                        <a href="#regalos" className={"uppercase text-white lg:text-black"}>Regalos</a>
                     </li>
                     <li>
-                        <a href="#mapa" className={"uppercase text-white"}>¿Cómo llegar?</a>
+                        <a href="#mapa" className={"uppercase text-white lg:text-black"}>¿Cómo llegar?</a>
                     </li>
                 </ul>
             </nav>

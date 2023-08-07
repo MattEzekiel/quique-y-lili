@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         <body className={`${rubik.className}`}>
         	<header className={"py-5 fixed lg:fixed top-0 w-full lg:bg-transparent z-20 transition-all duration-200 bg-principal"}>
                 <div className={"container mx-auto flex justify-between items-center overflow-x-hidden px-5"}>
-                    <a href="#" className={`${dancingScript.className} text-lg capitalize block w-fit text-white`}>Quique & Lili</a>
+                    <a href="#" className={`${dancingScript.className} text-lg capitalize block w-fit text-white lg:text-black`}>Quique & Lili</a>
                     <Menu />
                 </div>
             </header>

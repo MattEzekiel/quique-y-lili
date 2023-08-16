@@ -16,7 +16,7 @@
     position: relative;
     display: block;
     width: calc(127% + 1px);
-    height: 89px;
+    height: 90px;
 }
 
 .customShapeDividerTop.bottom svg {
@@ -25,4 +25,23 @@
 
 .customShapeDividerTop.inverted svg {
     transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 768px) {
+    .customShapeDividerTop svg {
+        width: 200%;
+        height: 40px;
+    }
+
+    .customShapeDividerTop.bottom {
+        bottom: -1px;
+    }
+
+    .customShapeDividerTop.bottom svg {
+        transform: scale(-1.25,-1.2);
+    }
+
+    .customShapeDividerTop {
+        top: -1px;
+    }
 }

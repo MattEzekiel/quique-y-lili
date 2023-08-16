@@ -1,6 +1,8 @@
 import './globals.css';
 import {dancingScript, rubik} from "@/helpers/fonts";
 import Menu from "@/components/Menu";
+import imageMetadata from './metadataimage.png';
+import Head from "next/head";
 
 export const metadata = {
     title: 'QUIQUE & LILI',
@@ -12,6 +14,8 @@ export const metadata = {
     openGraph: {
         title: 'QUIQUE & LILI',
         description: 'Queremos anunciarles que... ¡Nos casamos! Y queremos compartir con ustedes este hermoso momento',
+        url: 'https://quique-y-lili.vercel.app/',
+        image: imageMetadata,
     },
     icons: {
         icon: '/favicons/favicon-16x16.png',
@@ -21,6 +25,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es" className={"scroll-smooth"}>
+    <Head>
+        <meta property={"og:image"} content={imageMetadata.image} />
+    </Head>
         <body className={`${rubik.className}`}>
         	<header className={"py-5 fixed lg:fixed top-0 w-full lg:bg-transparent z-20 transition-all duration-200 bg-principal"}>
                 <div className={"container mx-auto flex justify-between items-center overflow-x-hidden px-5"}>

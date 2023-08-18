@@ -1,8 +1,6 @@
 import './globals.css';
 import {dancingScript, rubik} from "@/helpers/fonts";
 import Menu from "@/components/Menu";
-import imageMetadata from './metadataimage.png';
-import Head from "next/head";
 
 export const metadata = {
     title: 'QUIQUE & LILI',
@@ -15,7 +13,6 @@ export const metadata = {
         title: 'QUIQUE & LILI',
         description: 'Queremos anunciarles que... ¡Nos casamos! Y queremos compartir con ustedes este hermoso momento',
         url: 'https://quique-y-lili.vercel.app/',
-        image: imageMetadata,
     },
     icons: {
         icon: '/favicons/favicon-16x16.png',
@@ -23,11 +20,21 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  return (
+    return (
     <html lang="es" className={"scroll-smooth"}>
-    <Head>
-        <meta property={"og:image"} content={imageMetadata.image} />
-    </Head>
+    <head>
+        <title>{ metadata.title }</title>
+        <meta property="og:image" content="/metadataimage.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="600" />
+        <meta property="og:image:alt" content="Página de casamiento Quique &  Lili" />
+        <meta name="twitter:image" content="/metadataimage.png" />
+        <meta name="twitter:image:type" content="image/png" />
+        <meta name="twitter:image:width" content="1200" />
+        <meta name="twitter:image:height" content="600" />
+        <meta property="twitter:image:alt" content="Página de casamiento Quique &  Lili" />
+    </head>
         <body className={`${rubik.className}`}>
         	<header className={"py-5 fixed lg:fixed top-0 w-full lg:bg-transparent z-20 transition-all duration-200 bg-principal"}>
                 <div className={"container mx-auto flex justify-between items-center overflow-x-hidden px-5"}>

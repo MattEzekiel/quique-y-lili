@@ -34,6 +34,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:image:width" content="1200" />
         <meta name="twitter:image:height" content="600" />
         <meta property="twitter:image:alt" content="Página de casamiento Quique &  Lili" />
+        <link rel="preload" href="/assets/principal.jpg" as="image" />
     </head>
         <body className={`${rubik.className}`}>
         	<header className={"py-5 fixed lg:fixed top-0 w-full lg:bg-transparent z-20 transition-all duration-200 bg-principal"}>

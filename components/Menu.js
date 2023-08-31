@@ -13,14 +13,14 @@ function Menu() {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
             if (lugarSection && scrollTop >= lugarSection.offsetTop) {
-                header.classList.add('lg:shadow','lg:bg-principal');
+                header.classList.add('lg:shadow','lg:bg-principal','backdrop-blur');
                 header.classList.remove('lg:bg-transparent');
                 const tags_a = header.querySelectorAll('a');
                 tags_a.forEach(tag_a => {
                     tag_a.classList.remove('lg:text-black');
                 })
             } else {
-                header.classList.remove('lg:shadow','lg:bg-principal');
+                header.classList.remove('lg:shadow','lg:bg-principal','backdrop-blur');
                 header.classList.add('lg:bg-transparent');
                 const tags_a = header.querySelectorAll('a');
                 tags_a.forEach(tag_a => {

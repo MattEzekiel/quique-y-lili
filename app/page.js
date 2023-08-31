@@ -49,6 +49,7 @@ export default function Home() {
                               <li className={"mb-3"}>Fecha: <strong>Sábado 2 de Marzo de 2024 11:30 A.M.</strong></li>
                               <li className={"mb-3"}>Lugar: <strong>Víctor Juan Garino 6017, B1759 González Catán, Provincia de Buenos Aires</strong>.</li>
                               <li className={"mb-3"}><b>Estacionamiento incluido</b>.</li>
+                              <li className={"mb-3"}><b>Confirmación hasta 30 días antes del evento</b>.</li>
                           </ul>
                           <p className={"mt-3"}>Luego de la ceremonia, los invitamos al salón para compartir el almuerzo y mucho más. Estamos deseosos de poder disfrutar junto con ustedes de momentos inolvidables durante este día tan especial.</p>
                       </div>

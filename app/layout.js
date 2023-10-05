@@ -1,6 +1,7 @@
 import './globals.css';
 import {dancingScript, rubik} from "@/helpers/fonts";
 import Menu from "@/components/Menu";
+import Script from "next/script";
 
 export const metadata = {
     title: 'QUIQUE & LILI',
@@ -38,6 +39,21 @@ export default function RootLayout({ children }) {
         <meta name="twitter:description" content="Queremos anunciarles que... ¡Nos casamos! Y queremos compartir con ustedes este hermoso momento" />
         <meta name="twitter:image" content="https://quique-y-lili.vercel.app/metadataimage.png" />
         <link rel="preload" href="/assets/principal.jpg" as="image" />
+        <Script src={"https://www.googletagmanager.com/gtag/js?id=G-J7WPSNFWJN"}></Script>
+        <Script id={"google-analytics"}>
+            {`window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-J7WPSNFWJN');`}
+        </Script>
+        <Script id={"tag-manager-head"}>
+            {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KPXBX4N4');`}
+        </Script>
     </head>
         <body className={`${rubik.className}`}>
         	<header className={"py-5 fixed lg:fixed top-0 w-full lg:bg-transparent z-20 transition-all duration-200 bg-principal !bg-opacity-90"}>
@@ -57,6 +73,10 @@ export default function RootLayout({ children }) {
         	<footer className={"bg-gray-800"}>
                 <p className={"text-center text-white py-5"}>Matías Ezequiel Bubello &copy; { new Date().getFullYear() }</p>
             </footer>
+        <Script id={"tag-manager-body"}>
+            {`<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPXBX4N4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>`}
+        </Script>
         </body>
     </html>
   )

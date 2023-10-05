@@ -62,6 +62,7 @@ const ButtonGifts = ({ cbu, alias }) => {
     return (
         <div className="flex justify-center items-center mt-10">
             <button
+                id={"regalo-button"}
                 type={"button"}
                 onClick={handleCBU}
                 className={"bg-cuaternario hover:bg-terciario hover:text-white transition-colors duration-300 px-10 py-3 rounded"}

@@ -24,16 +24,19 @@ export default function RootLayout({ children }) {
     <html lang="es" className={"scroll-smooth"}>
     <head>
         <title>{ metadata.title }</title>
+        <title>QUIQUE & LILI</title>
+        <meta name="description" content="Queremos anunciarles que... ¡Nos casamos! Y queremos compartir con ustedes este hermoso momento" />
+        <meta property="og:url" content="https://quique-y-lili.vercel.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="QUIQUE & LILI" />
+        <meta property="og:description" content="Queremos anunciarles que... ¡Nos casamos! Y queremos compartir con ustedes este hermoso momento" />
         <meta property="og:image" content="https://quique-y-lili.vercel.app/metadataimage.png" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="600" />
-        <meta property="og:image:alt" content="Página de casamiento Quique &  Lili" />
-        <meta name="twitter:image" content="/metadataimage.png" />
-        <meta name="twitter:image:type" content="image/png" />
-        <meta name="twitter:image:width" content="1200" />
-        <meta name="twitter:image:height" content="600" />
-        <meta property="twitter:image:alt" content="Página de casamiento Quique &  Lili" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="quique-y-lili.vercel.app" />
+        <meta property="twitter:url" content="https://quique-y-lili.vercel.app/" />
+        <meta name="twitter:title" content="QUIQUE & LILI" />
+        <meta name="twitter:description" content="Queremos anunciarles que... ¡Nos casamos! Y queremos compartir con ustedes este hermoso momento" />
+        <meta name="twitter:image" content="https://quique-y-lili.vercel.app/metadataimage.png" />
         <link rel="preload" href="/assets/principal.jpg" as="image" />
     </head>
         <body className={`${rubik.className}`}>

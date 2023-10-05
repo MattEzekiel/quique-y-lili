@@ -113,16 +113,18 @@ export default function Home() {
               <H2>Queremos que estés presente</H2>
               <p className={"text-center mt-5 leading-tight"}>Por eso te pedimos que nos confirmes tu asistencia, a través, de estos contactos</p>
               <ul className={"mt-10 flex xl:gap-x-10 gap-x-5 w-fit mx-auto"}>
-                  <li id={"quique-wp"} className={"uppercase tooltip"} datatype={"Quique"}>
+                  <li className={"uppercase tooltip"} datatype={"Quique"}>
                       <ButtonHoverEffect
                           text={"Quique"}
                           url={process.env.QUIQUE_LINK}
+                          id={"quique-wp"}
                       />
                   </li>
-                  <li id={"lili-wp"} className={"uppercase tooltip"} datatype={"Lili"}>
+                  <li className={"uppercase tooltip"} datatype={"Lili"}>
                       <ButtonHoverEffect
                           text={"Lili"}
                           url={process.env.LILI_LINK}
+                          id={"lili-wp"}
                       />
                   </li>
               </ul>

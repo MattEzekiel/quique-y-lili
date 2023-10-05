@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Styles from '@/css/ButtonHoverEffect.module.css';
 
-function ButtonHoverEffect({ text = "", url = "", target = "_blank" }) {
+function ButtonHoverEffect({ text = "", url = "", target = "_blank", id }) {
     return (
-        <Link href={url} className={Styles.button} target={target}>
+        <Link id={id} href={url} className={Styles.button} target={target}>
             {text}
             <div className={Styles.star1}>
                 <svg

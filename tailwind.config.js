@@ -22,7 +22,7 @@ module.exports = {
       },
       rotate: {
         '270' : '270deg',
-      }
+      },
     },
   },
   plugins: [],

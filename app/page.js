@@ -15,14 +15,14 @@ export default function Home() {
       <main>
           <section className={`relative ${sectionPrincipal.principal}`}>
               <div className={"min-h-screen flex justify-center items-center py-10"}>
-                  <div className={"py-10 lg:py-20 lg:px-0 px-10"}>
+                  <div className={"py-10 lg:py-20 lg:px-0 px-10 w-full"}>
                       <h1 className={`${dancingScript.className} text-center uppercase flex flex-col`}>
                           <span className={"text-4xl xl:text-5xl"}>¡Nos Casamos!</span>
                           <span className={"text-6xl xl:text-9xl capitalize block mb-2 mt-5"}>Quique</span>
                           <span className={"text-3xl xl:text-6xl block my-3"}>&</span>
                           <span className={"text-6xl xl:text-9xl capitalize block"}>Lili</span>
                       </h1>
-                      <p className={`${dancingScript.className} text-center text-4xl mt-6`}><sub>...</sub>Tiempo y ocasión acontecen a todos.</p>
+                      <p className={`${dancingScript.className} text-center text-4xl mt-6 text-balance`}><sub>...</sub>Tiempo y ocasión acontecen a todos.</p>
                       <section className={"py-10 lg:bg-transparent"}>
                           <H2 classes={"mt-5"}>Nos veremos en</H2>
                           <div className={"mt-8"}>
@@ -110,7 +110,7 @@ export default function Home() {
                   horientation={'inverted'}
                   fillType={"fill-gradient-pink"}
               />
-              <H2>Queremos que estés presente</H2>
+              <H2 classes={"text-balance"}>Queremos que estés presente</H2>
               <p className={"text-center mt-5 leading-tight"}>Por eso te pedimos que nos confirmes tu asistencia, a través, de estos contactos</p>
               <ul className={"mt-10 flex xl:gap-x-10 gap-x-5 w-fit mx-auto"}>
                   <li className={"uppercase tooltip"} datatype={"Quique"}>

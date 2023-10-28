@@ -40,7 +40,7 @@ function Menu() {
         <div className={"max-w-full overflow-x-hidden"}>
             <button
                 type={"button"}
-                className={`${StylesHamburguer.hamburger} lg:hidden`}
+                className={`${StylesHamburguer.hamburger} lg:!hidden`}
                 onClick={() => setIsOpen(!isOpen)}
             >
                 <span className={`${StylesHamburguer.hamburgerSpan} ${isOpen ? StylesHamburguer.abierto : StylesHamburguer.cerrado}`}>

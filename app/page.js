@@ -111,7 +111,7 @@ export default function Home() {
                   fillType={"fill-gradient-pink"}
               />
               <H2 classes={"text-balance"}>Queremos que estés presente</H2>
-              <p className={"text-center mt-5 leading-tight"}>Por eso te pedimos que nos confirmes tu asistencia, a través, de estos contactos</p>
+              <p className={"text-center mt-5 leading-tight"}>Por eso te pedimos que nos confirmes tu asistencia, clickeando estos botones</p>
               <ul className={"mt-10 flex xl:gap-x-10 gap-x-5 w-fit mx-auto"}>
                   <li className={"uppercase tooltip"} datatype={"Quique"}>
                       <ButtonHoverEffect

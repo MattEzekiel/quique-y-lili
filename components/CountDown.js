@@ -6,7 +6,7 @@ const second = 1000,
     hour = minute * 60,
     day = hour * 24;
 
-const date = 'March 2, 2024 11:30:00';
+const date = 'March 2, 2024 17:00:00';
 
 function CountDown() {
     const [days, setDays] = useState(0);

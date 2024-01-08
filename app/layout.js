@@ -71,7 +71,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     referrerPolicy={"no-referrer-when-downgrade"} />
             </aside>
         	<footer className={"bg-gray-800"}>
-                <p className={"text-center text-white py-5"}>Matías Ezequiel Bubello &copy; { new Date().getFullYear() }</p>
+                <p className={"text-center text-white py-5"}>Matías Ezequiel Bubello &copy; 2023 - { new Date().getFullYear() }</p>
             </footer>
         <Script id={"tag-manager-body"}>
             {`<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPXBX4N4"

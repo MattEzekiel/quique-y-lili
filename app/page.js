@@ -3,10 +3,10 @@ import Image from "next/image";
 import H2 from "@/components/H2";
 import { dancingScript } from "@/helpers/fonts";
 import ButtonHoverEffect from "@/components/ButtonHoverEffect";
-import SectionLugar from 'css/Lugar.module.css';
-import sectionRegalos from 'css/Regalos.module.css';
-import sectionPrincipal from 'css/Principal.module.css';
-import sectionConfirmacion from 'css/Confirmacion.module.css'
+import SectionLugar from '../css/Lugar.module.css';
+import sectionRegalos from '../css/Regalos.module.css';
+import sectionPrincipal from '../css/Principal.module.css';
+import sectionConfirmacion from '../css/Confirmacion.module.css'
 import ButtonGifts from "@/components/ButtonGifts";
 import ShapeSections from "@/components/ShapeSections";
 
@@ -43,13 +43,14 @@ export default function Home() {
                   <div className={"xl:w-1/2 xl:pr-28 flex flex-col justify-between"}>
                       <div>
                           <H2 classes={"xl:text-left"}>Lugar</H2>
-                          <p className={"mt-3"}>¡Hola! Estamos muy emocionados de poder compartir con vos este día tan esperado: <b className={"text-xl"}>¡Nuestra Boda!</b></p>
+                          <p className={"mt-3"}>¡Hola! Estamos muy emocionados de poder compartir con vos este día tan esperado: <strong className={"text-xl"}>¡Nuestra Boda!</strong></p>
                           <p className={"mt-3"}>Por esto es que te Invitamos a ser parte de la ceremonia y de la fiesta en <strong>Campo Cristal Eventos</strong>. <br/>Te dejamos aquí debajo todos los datos que necesitas saber:</p>
                           <ul className={"mt-3 list-disc"}>
-                              <li className={"mb-3"}>Fecha: <strong>Sábado 2 de Marzo de 2024 11:30 A.M.</strong></li>
+                              <li className={"mb-3"}>Fecha: <strong>Sábado 2 de Marzo de 2024 a partir de las 17:00hs.</strong></li>
                               <li className={"mb-3"}>Lugar: <strong>Víctor Juan Garino 6017, B1759 González Catán, Provincia de Buenos Aires</strong>.</li>
-                              <li className={"mb-3"}><b>Estacionamiento incluido</b>.</li>
-                              <li className={"mb-3"}><b>Confirmación hasta 30 días antes del evento</b>.</li>
+                              <li className={"mb-3"}><strong>Estacionamiento incluido</strong>.</li>
+                              <li className={"mb-3"}><strong>Confirmación hasta 30 días antes del evento</strong>.</li>
+                              <li className={"mb-3"}>Vestimenta: <strong>Elegante-sport</strong>. El novio vestirá de gris y la novia de blanco.</li>
                           </ul>
                           <p className={"mt-3"}>Luego de la ceremonia, los invitamos al salón para compartir el almuerzo y mucho más. Estamos deseosos de poder disfrutar junto con ustedes de momentos inolvidables durante este día tan especial.</p>
                       </div>

@@ -52,7 +52,7 @@ export default function Home() {
                               <li className={"mb-3"}><strong>Confirmación hasta 30 días antes del evento</strong>.</li>
                               <li className={"mb-3"}>Vestimenta: <strong>Elegante-sport</strong>. El novio vestirá de gris y la novia de blanco.</li>
                           </ul>
-                          <p className={"mt-3"}>Luego de la ceremonia, los invitamos al salón para compartir el almuerzo y mucho más. Estamos deseosos de poder disfrutar junto con ustedes de momentos inolvidables durante este día tan especial.</p>
+                          <p className={"mt-3"}>Luego de la ceremonia, los invitamos al salón para compartir la cena y mucho más. Estamos deseosos de poder disfrutar junto con ustedes de momentos inolvidables durante este día tan especial.</p>
                       </div>
                       <p className={"mt-3 text-xl mb-10 lg:mb-0"}>¡Los esperamos con un corazón lleno de gratitud!</p>
                   </div>

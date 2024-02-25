@@ -48,7 +48,7 @@ function Menu() {
                 </span>
             </button>
             <nav className={`${StylesHamburger.backdrop} ${isOpen ? StylesHamburger.backdropShow : StylesHamburger.backdropHidden} lg:relative lg:right-0 absolute top-16 lg:top-0 transition-all duration-300 ${isOpen ? 'right-0' : 'right-[-100vw]'}`}>
-                <ul className={"flex flex-col lg:flex-row gap-x-5 h-screen lg:h-fit bg-principal lg:bg-inherit px-5 gap-y-5 w-fit lg:pt-0 pt-10"}>
+                <ul className={"flex flex-col lg:flex-row gap-x-5 md:gap-x-10 h-screen lg:h-fit bg-principal lg:bg-inherit px-5 gap-y-5 w-fit lg:pt-0 pt-10"}>
                     <li>
                         <a href="#lugar" className={"uppercase text-white lg:text-black"}>Lugar</a>
                     </li>

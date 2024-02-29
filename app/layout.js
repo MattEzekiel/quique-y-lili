@@ -24,21 +24,25 @@ export default function RootLayout({ children }) {
     return (
     <html lang="es" className={"scroll-smooth"}>
     <head>
-        <title>{ metadata.title }</title>
+        <title>{metadata.title}</title>
         <title>QUIQUE & LILI</title>
-        <meta name="description" content="Queremos anunciarles que... ¡Nos casamos! Y queremos compartir con ustedes este hermoso momento" />
-        <meta property="og:url" content="https://quique-y-lili.vercel.app/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="QUIQUE & LILI" />
-        <meta property="og:description" content="Queremos anunciarles que... ¡Nos casamos! Y queremos compartir con ustedes este hermoso momento" />
-        <meta property="og:image" content="https://quique-y-lili.vercel.app/metadataimage.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="quique-y-lili.vercel.app" />
-        <meta property="twitter:url" content="https://quique-y-lili.vercel.app/" />
-        <meta name="twitter:title" content="QUIQUE & LILI" />
-        <meta name="twitter:description" content="Queremos anunciarles que... ¡Nos casamos! Y queremos compartir con ustedes este hermoso momento" />
-        <meta name="twitter:image" content="https://quique-y-lili.vercel.app/metadataimage.png" />
-        <link rel="preload" href="/assets/principal.jpg" as="image" />
+        <meta name="description"
+              content="Queremos anunciarles que... ¡Nos casamos! Y queremos compartir con ustedes este hermoso momento"/>
+        <meta property="og:url" content="https://quique-y-lili.vercel.app/"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="QUIQUE & LILI"/>
+        <meta property="og:description"
+              content="Queremos anunciarles que... ¡Nos casamos! Y queremos compartir con ustedes este hermoso momento"/>
+        <meta property="og:image" content="https://quique-y-lili.vercel.app/metadataimage.png"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:domain" content="quique-y-lili.vercel.app"/>
+        <meta property="twitter:url" content="https://quique-y-lili.vercel.app/"/>
+        <meta name="twitter:title" content="QUIQUE & LILI"/>
+        <meta name="twitter:description"
+              content="Queremos anunciarles que... ¡Nos casamos! Y queremos compartir con ustedes este hermoso momento"/>
+        <meta name="twitter:image" content="https://quique-y-lili.vercel.app/metadataimage.png"/>
+        <link rel="preload" href="/assets/principal.jpg" as="image"/>
+        <link rel="canonical" href="https://quique-y-lili.vercel.app/" />
         <Script src={"https://www.googletagmanager.com/gtag/js?id=G-J7WPSNFWJN"}></Script>
         <Script id={"google-analytics"}>
             {`window.dataLayer = window.dataLayer || [];
@@ -55,8 +59,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-KPXBX4N4');`}
         </Script>
     </head>
-        <body className={`${rubik.className}`}>
-        	<header className={"py-5 fixed lg:fixed top-0 w-full lg:bg-transparent z-20 transition-all duration-200 bg-principal !bg-opacity-90"}>
+    <body className={`${rubik.className}`}>
+    <header className={"py-5 fixed lg:fixed top-0 w-full lg:bg-transparent z-20 transition-all duration-200 bg-principal !bg-opacity-90"}>
                 <div className={"container mx-auto flex justify-between items-center overflow-x-hidden px-5"}>
                     <a href="#" className={`${dancingScript.className} text-lg capitalize block w-fit text-white lg:text-black`}>Quique & Lili</a>
                     <Menu />

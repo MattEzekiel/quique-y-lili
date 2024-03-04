@@ -23,12 +23,13 @@ export default function Home() {
                           <span className={"text-6xl xl:text-9xl capitalize block"}>Lili</span>
                       </h1>
                       <p className={`${dancingScript.className} text-center text-4xl mt-6 text-balance`}><sub>...</sub>Tiempo y ocasión acontecen a todos.</p>
-                      <section className={"py-10 lg:bg-transparent"}>
+                      {/*<section className={"py-10 lg:bg-transparent"}>
                           <H2 classes={"mt-5"}>Nos veremos en</H2>
                           <div className={"mt-8"}>
                               <CountDown />
                           </div>
-                      </section>
+                      </section>*/}
+                      <H2 classes={`${dancingScript.className} md:mt-10 mt-5`}>02/03/2024</H2>
                   </div>
               </div>
               <ShapeSections
